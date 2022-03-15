@@ -1,0 +1,189 @@
+:root {
+  --orange: #d46b3d;
+  --main-light-color: #e5e5e5;
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  overflow-x: hidden;
+  background: fixed url("./Images/double-bubble-dark.png") center;
+}
+.home {
+  padding: 0 0 5em 0;
+}
+.circle {
+  box-shadow: 0 0 0 9px var(--orange);
+  height: 400px;
+  width: 400px;
+  border: 10px;
+  border-radius: 50%;
+  position: absolute;
+  left: 26em;
+}
+
+.bigname {
+  color: var(--orange);
+  font-family: "Reggae One", cursive;
+  font-size: 96px;
+  position: relative;
+  left: 1em;
+  top: 1em;
+}
+
+.occupation {
+  text-transform: uppercase;
+  color: var(--orange);
+  font-size: 24px;
+  font-family: "Readex Pro", sans-serif;
+  position: relative;
+  left: 21.5em;
+  top: 2.5em;
+}
+
+.location {
+  text-transform: capitalize;
+  color: var(--main-light-color);
+  font-size: 18px;
+  font-family: "Readex Pro", sans-serif;
+  position: relative;
+  left: 30.3em;
+  top: 3.8em;
+}
+
+.underline {
+  height: 3px;
+  width: 182px;
+  background-color: var(--orange);
+  position: relative;
+  left: 33em;
+  top: 5em;
+}
+
+.contact-button {
+  height: 60px;
+  width: 168px;
+  position: relative;
+  background-color: var(--orange);
+  border: none;
+  border-radius: 20px;
+  cursor: pointer;
+  left: 33em;
+  top: 6em;
+}
+
+.contact-button p {
+  font-family: "Readex Pro", sans-serif;
+  color: var(--main-light-color);
+  padding: 12px 30px;
+  font-size: 28px;
+}
+
+.underlineVector img {
+  position: relative;
+  left: 75em;
+  top: 4em;
+}
+
+img[alt="Logo"] {
+  position: relative;
+  left: 6em;
+  top: 1em;
+}
+
+.nav{
+   position: relative;
+  left: 34em;
+  bottom: 6em;
+}
+
+.nav ul {
+  display: flex;
+  list-style-type: none;
+  position: relative;
+}
+
+.nav ul li {
+  font-family: "Readex Pro", sans-serif;
+  color: var(--main-light-color);
+  text-transform: capitalize;
+  padding: 1em;
+  font-size: 28px;
+  cursor: pointer;
+}
+
+.line {
+  height: 1px;
+  width: 18px;
+  background-color: var(--orange);
+}
+
+.button {
+  height: 40px;
+  width: 160px;
+  color: var(--orange);
+  /* background-color: var(--main-light-color); */
+}
+
+.about {
+  width: 100vw;
+  height: 400px;
+  position: relative;
+  display: flex;
+}
+
+.image-frame .one,
+.image-frame .two {
+  height: 300px;
+  width: 200px;
+  border: 1px solid var(--main-light-color);
+  border-radius: 20px;
+  position: relative;
+  left: 8em;
+}
+
+.image-frame .two {
+  position: relative;
+}
+
+.image-frame .one {
+  position: relative;
+  left: 6em;
+  top: 20em;
+}
+
+.image-frame .two img {
+  width: 200px;
+  height: 300px;
+  border-radius: 20px;
+}
+
+.aboutme-text h4 {
+  text-transform: uppercase;
+  font-family: "Reggae One", cursive;
+  color: var(--orange);
+  font-size: 28px;
+  position: relative;
+  left: 14em;
+  top: 7em;
+}
+
+.aboutme-text > .underline {
+  position: relative;
+  top: 12em;
+  left: 1em;
+}
+
+.aboutme-text p{
+  color: var(--main-light-color);
+}
+
+.description{
+  height: 150px;
+  width: 320px;
+}
+span{
+  color: var(--orange);
+}
