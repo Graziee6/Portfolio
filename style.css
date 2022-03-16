@@ -242,3 +242,50 @@ span{
   color: var(--orange);
   font-family: "Reggae One", sans-serif;
 }
+
+.projects{
+  height: 30em;
+  background-color: var(--orange);
+  margin: 12em 0 0 0;
+  display: flex;
+}
+
+.projects a{
+  text-decoration: underline;
+  color: var(--main-light-color);
+  font-family: "Readex Pro", sans-serif;
+}
+
+.projects h4{
+  text-transform: capitalize;
+  font-size: 28px;
+  color: var(--main-light-color);
+  font-family: "Readex Pro", sans-serif;
+}
+
+.title{
+  display: flex;
+  width: 50%;
+  align-items: center;
+  justify-content: center;
+}
+
+#vector1, #vector2{
+  padding: .5em .5em 0 0;
+}
+#vector1{
+  height: 1.8em;
+  width: 1.8em;
+}
+#vector2{
+  height: 1.8em;
+  width: 1.5em;
+}
+
+.first{
+  margin: 1em 0 0 3em;
+}
+
+.second{
+  margin: 1em 0 0 3em;
+}
