@@ -159,7 +159,7 @@ img[alt="Logo"] {
 .image-frame .one {
   position: relative;
   left: 36em;
-  top: 19em;
+  top: 20em;
 }
 
 .image-frame .two img {
@@ -214,5 +214,31 @@ span{
   background-color: var(--orange);
   position: absolute;
   top: 16em;
-  left: 36.5em;
+  left: 36.3em;
+}
+
+.skills{
+  position: absolute;
+  top: 20em;
+  left: 7.2em;
+}
+
+.skills ul{
+  list-style-type: none;
+  position: absolute;
+  color: var(--main-light-color);
+  font-family: "Readex Pro", sans-serif;
+  line-height: 1.5;
+}
+
+.skills h4{
+  font-family: "Readex Pro", sans-serif;
+  color: var(--orange);
+  text-transform: uppercase;
+  padding: .8em 0;
+}
+
+.skills h6{
+  color: var(--orange);
+  font-family: "Reggae One", sans-serif;
 }
