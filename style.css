@@ -159,7 +159,7 @@ img[alt="Logo"] {
 .image-frame .one {
   position: relative;
   left: 36em;
-  top: 19em;
+  top: 20em;
 }
 
 .image-frame .two img {
@@ -214,5 +214,78 @@ span{
   background-color: var(--orange);
   position: absolute;
   top: 16em;
-  left: 36.5em;
+  left: 36.3em;
+}
+
+.skills{
+  position: absolute;
+  top: 20em;
+  left: 7.2em;
+}
+
+.skills ul{
+  list-style-type: none;
+  position: absolute;
+  color: var(--main-light-color);
+  font-family: "Readex Pro", sans-serif;
+  line-height: 1.5;
+}
+
+.skills h4{
+  font-family: "Readex Pro", sans-serif;
+  color: var(--orange);
+  text-transform: uppercase;
+  padding: .8em 0;
+}
+
+.skills h6{
+  color: var(--orange);
+  font-family: "Reggae One", sans-serif;
+}
+
+.projects{
+  height: 30em;
+  background-color: var(--orange);
+  margin: 12em 0 0 0;
+  display: flex;
+}
+
+.projects a{
+  text-decoration: underline;
+  color: var(--main-light-color);
+  font-family: "Readex Pro", sans-serif;
+}
+
+.projects h4{
+  text-transform: capitalize;
+  font-size: 28px;
+  color: var(--main-light-color);
+  font-family: "Readex Pro", sans-serif;
+}
+
+.title{
+  display: flex;
+  width: 50%;
+  align-items: center;
+  justify-content: center;
+}
+
+#vector1, #vector2{
+  padding: .5em .5em 0 0;
+}
+#vector1{
+  height: 1.8em;
+  width: 1.8em;
+}
+#vector2{
+  height: 1.8em;
+  width: 1.5em;
+}
+
+.first{
+  margin: 1em 0 0 3em;
+}
+
+.second{
+  margin: 1em 0 0 3em;
 }
