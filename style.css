@@ -21,7 +21,7 @@ body {
   border: 10px;
   border-radius: 50%;
   position: absolute;
-  left: 26em;
+  left: 28em;
 }
 
 .bigname {
@@ -39,7 +39,7 @@ body {
   font-size: 24px;
   font-family: "Readex Pro", sans-serif;
   position: relative;
-  left: 21.5em;
+  left: 23em;
   top: 2.5em;
 }
 
@@ -49,7 +49,7 @@ body {
   font-size: 18px;
   font-family: "Readex Pro", sans-serif;
   position: relative;
-  left: 30.3em;
+  left: 32em;
   top: 3.8em;
 }
 
@@ -58,7 +58,7 @@ body {
   width: 182px;
   background-color: var(--orange);
   position: relative;
-  left: 33em;
+  left: 35.1em;
   top: 5em;
 }
 
@@ -70,7 +70,7 @@ body {
   border: none;
   border-radius: 20px;
   cursor: pointer;
-  left: 33em;
+  left: 35.5em;
   top: 6em;
 }
 
@@ -105,7 +105,7 @@ img[alt="Logo"] {
   position: relative;
 }
 
-.nav ul li {
+.nav ul li:not(li.button) {
   font-family: "Readex Pro", sans-serif;
   color: var(--main-light-color);
   text-transform: capitalize;
@@ -114,17 +114,25 @@ img[alt="Logo"] {
   cursor: pointer;
 }
 
-.line {
-  height: 1px;
-  width: 18px;
-  background-color: var(--orange);
+.nav-line{
+  position: absolute;
+  bottom: 1em;
+  left: 2em;
 }
 
 .button {
-  height: 40px;
+  height: 48px;
   width: 160px;
   color: var(--orange);
-  /* background-color: var(--main-light-color); */
+  background-color: var(--main-light-color);
+  font-family: "Readex Pro", sans-serif;
+  text-transform: capitalize;
+  font-size: 28px;
+  margin: 18px;
+  padding: 6px 10px 5px 25px;
+  cursor: pointer;
+  border: none;
+  border-radius: 20px;
 }
 
 .about {
@@ -140,7 +148,7 @@ img[alt="Logo"] {
   width: 200px;
   border: 1px solid var(--main-light-color);
   border-radius: 20px;
-  position: relative;
+  position: absolute;
   left: 8em;
 }
 
@@ -170,10 +178,11 @@ img[alt="Logo"] {
   top: 7em;
 }
 
-.aboutme-text > .underline {
-  position: relative;
-  top: 12em;
-  left: 1em;
+.nav-line, .aboutme-text > .line {
+  height: 1px;
+  width: 18px;
+  background-color: var(--orange);
+
 }
 
 .aboutme-text p{
