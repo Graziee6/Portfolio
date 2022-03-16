@@ -94,8 +94,8 @@ img[alt="Logo"] {
 }
 
 .nav{
-   position: relative;
-  left: 34em;
+  position: relative;
+  left: 31em;
   bottom: 6em;
 }
 
@@ -149,7 +149,7 @@ img[alt="Logo"] {
   border: 1px solid var(--main-light-color);
   border-radius: 20px;
   position: absolute;
-  left: 8em;
+  left: 35em;
 }
 
 .image-frame .two {
@@ -158,8 +158,8 @@ img[alt="Logo"] {
 
 .image-frame .one {
   position: relative;
-  left: 6em;
-  top: 20em;
+  left: 36em;
+  top: 19em;
 }
 
 .image-frame .two img {
@@ -178,7 +178,7 @@ img[alt="Logo"] {
   top: 7em;
 }
 
-.nav-line, .aboutme-text > .line {
+.nav-line{
   height: 1px;
   width: 18px;
   background-color: var(--orange);
@@ -193,6 +193,26 @@ img[alt="Logo"] {
   height: 150px;
   width: 320px;
 }
+
+.description p{
+  height: 150px;
+  width: 320px;
+  position: absolute;
+  top: 24em;
+  left: 59em;
+  font-family: "Readex Pro", sans-serif;
+  line-height: 1.5;
+}
+
 span{
   color: var(--orange);
+}
+
+.line{
+  height: 3px;
+  width: 182px;
+  background-color: var(--orange);
+  position: absolute;
+  top: 16em;
+  left: 36.5em;
 }
