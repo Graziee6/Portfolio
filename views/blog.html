@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="../style.css" />
+    <title>Blog!</title>
+  </head>
+  <body id="blog">
+    <section class="options">
+      <div class="blog-btn create">Create</div>
+      <div class="blog-btn view">View</div>
+      <!-- <div class="blog-btn"></div>
+          <div class="blog-btn"></div> -->
+    </section>
+
+    <div class="blog-form">
+      <h4>New blog</h4>
+      <div id="error">Title and body cannot be empty</div>
+      <form action="#" method="post">
+        <input
+          type="text"
+          name="title"
+          id="title"
+          placeholder="Title..."
+        /><br />
+        <textarea
+          name="body"
+          id="body"
+          placeholder="Blog body.."
+          cols="30"
+          rows="10"
+        ></textarea
+        ><br />
+        <input type="submit" id="create" value="Create" />
+      </form>
+    </div>
+    <script src="../script.js"></script>
+  </body>
+</html>
