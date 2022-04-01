@@ -93,7 +93,7 @@ img[alt="Logo"] {
   top: 1em;
 }
 
-.nav{
+.nav {
   position: relative;
   left: 31em;
   bottom: 6em;
@@ -114,7 +114,7 @@ img[alt="Logo"] {
   cursor: pointer;
 }
 
-.nav-line{
+.nav-line {
   position: absolute;
   bottom: 1em;
   left: 2em;
@@ -178,23 +178,22 @@ img[alt="Logo"] {
   top: 7em;
 }
 
-.nav-line{
+.nav-line {
   height: 1px;
   width: 18px;
   background-color: var(--orange);
-
 }
 
-.aboutme-text p{
+.aboutme-text p {
   color: var(--main-light-color);
 }
 
-.description{
+.description {
   height: 150px;
   width: 320px;
 }
 
-.description p{
+.description p {
   height: 150px;
   width: 320px;
   position: absolute;
@@ -204,11 +203,11 @@ img[alt="Logo"] {
   line-height: 1.5;
 }
 
-span{
+span {
   color: var(--orange);
 }
 
-.line{
+.line {
   height: 3px;
   width: 182px;
   background-color: var(--orange);
@@ -217,13 +216,13 @@ span{
   left: 36.3em;
 }
 
-.skills{
+.skills {
   position: absolute;
   top: 20em;
   left: 7.2em;
 }
 
-.skills ul{
+.skills ul {
   list-style-type: none;
   position: absolute;
   color: var(--main-light-color);
@@ -231,61 +230,235 @@ span{
   line-height: 1.5;
 }
 
-.skills h4{
+.skills h4 {
   font-family: "Readex Pro", sans-serif;
   color: var(--orange);
   text-transform: uppercase;
-  padding: .8em 0;
+  padding: 0.8em 0;
 }
 
-.skills h6{
+.skills h6 {
   color: var(--orange);
   font-family: "Reggae One", sans-serif;
 }
 
-.projects{
+.projects {
   height: 30em;
   background-color: var(--orange);
   margin: 12em 0 0 0;
   display: flex;
 }
 
-.projects a{
+.projects a {
   text-decoration: underline;
   color: var(--main-light-color);
   font-family: "Readex Pro", sans-serif;
 }
 
-.projects h4{
+.projects h4 {
   text-transform: capitalize;
   font-size: 28px;
   color: var(--main-light-color);
   font-family: "Readex Pro", sans-serif;
 }
 
-.title{
+.title {
   display: flex;
   width: 50%;
   align-items: center;
   justify-content: center;
 }
 
-#vector1, #vector2{
-  padding: .5em .5em 0 0;
+#vector1,
+#vector2 {
+  padding: 0.5em 0.5em 0 0;
 }
-#vector1{
+#vector1 {
   height: 1.8em;
   width: 1.8em;
 }
-#vector2{
+#vector2 {
   height: 1.8em;
   width: 1.5em;
 }
 
-.first{
+.first {
   margin: 1em 0 0 3em;
 }
 
-.second{
+.second {
   margin: 1em 0 0 3em;
+}
+
+.contact-me {
+  height: 21em;
+  padding: 1em;
+  background-color: var(--orange);
+  position: relative;
+  top: 21em;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+section.contact-me * {
+  margin: 0 auto;
+}
+
+.contact-me h4 {
+  text-transform: capitalize;
+  font-size: 28px;
+  color: var(--main-light-color);
+  font-family: "Readex Pro", sans-serif;
+  padding: 1em 0 2em 0;
+}
+
+#black {
+  color: black;
+  font-family: "Reggae One", sans-serif;
+  font-size: 28px;
+}
+
+#white {
+  color: var(--main-light-color);
+  font-family: "Readex Pro", sans-serif;
+  font-size: 28px;
+  font-weight: 200;
+  padding: 0 0 1em 0;
+}
+
+#email a {
+  color: var(--main-light-color);
+  font-family: "Readex Pro", sans-serif;
+  font-size: 36px;
+  font-weight: lighter;
+  text-decoration: none;
+}
+
+#order {
+  color: var(--orange);
+  background-color: var(--main-light-color);
+  font-size: 18px;
+  font-weight: 800;
+  width: fit-content;
+  padding: 10px 5px 0 5px;
+  border: none;
+  border-radius: 2px;
+}
+
+/* blog.html */
+
+#blog {
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.options {
+  display: flex;
+}
+
+.blog-btn {
+  width: fit-content;
+  padding: 10px;
+  border: none;
+  border-radius: 2px;
+  background-color: var(--main-light-color);
+  font-size: 24px;
+  font-weight: 600;
+  color: var(--orange);
+  font-family: "Readex Pro", sans-serif;
+  margin: 5em auto;
+  cursor: pointer;
+}
+
+.blog-form {
+  display: inline-block !important;
+  margin: 0 auto;
+  border: 2px solid var(--orange);
+  border-radius: 2px;
+  padding: 1em;
+  opacity: 0;
+}
+
+.blog-form * {
+  padding: 10px;
+}
+
+.blog-form h4 {
+  color: var(--orange);
+  font-family: "Readex Pro", sans-serif;
+  font-size: 24px;
+}
+
+#error {
+  width: fit-content;
+  padding: 10px;
+  background-color: #d46b3d33;
+  color: var(--orange);
+  font-family: "Readex Pro", sans-serif;
+  font-size: 18px;
+  position: relative;
+  opacity: 0;
+}
+
+input,
+textarea {
+  margin: 0 0 10px 0;
+}
+
+#create {
+  width: fit-content;
+  padding: 10px;
+  border: none;
+  border-radius: 2px;
+  background-color: var(--orange);
+  font-size: 18px;
+  font-weight: 600;
+  color: var(--main-light-color);
+  cursor: pointer;
+}
+
+/* RESPONSIVENESS */
+@media screen and (max-width: 428px) {
+  .circle,
+  .logo,
+  .nav {
+    opacity: 0;
+  }
+  * {
+    overflow-x: hidden;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  .bigname {
+    color: var(--orange);
+    font-family: "Reggae One", cursive;
+    font-size: 28px;
+    position: relative;
+    right: 10em;
+    /* left: 1em;
+    top: 1em; */
+  }
+
+  .occupation {
+    text-transform: uppercase;
+    color: var(--orange);
+    font-size: 24px;
+    font-family: "Readex Pro", sans-serif;
+    position: relative;
+    /* left: 23em;
+    top: 2.5em; */
+  }
+
+  .location {
+    text-transform: capitalize;
+    color: var(--main-light-color);
+    font-size: 18px;
+    font-family: "Readex Pro", sans-serif;
+    position: relative;
+    /* left: 32em;
+    top: 3.8em; */
+  }
 }
