@@ -1,5 +1,6 @@
 :root {
   --orange: #d46b3d;
+  --error-color: #ff0000cc;
   --main-light-color: #e5e5e5;
   --secondary-light-color: #c4c4c499;
 }
@@ -13,55 +14,78 @@ html {
   scroll-behavior: smooth;
 }
 
-#login {
+#login,
+#signup {
   font-family: "Readex Pro", sans-serif;
-  margin: 10rem;
+}
+
+#login {
+  margin: 8rem 0;
+}
+
+#signup {
+  margin: 7rem;
 }
 
 #login h3,
-#login h4 a {
+#login h4 a,
+#signup h3,
+#signup h4 a {
   color: var(--orange);
 }
 
-#login h3 {
+#login h3,
+#signup h3 {
   text-transform: uppercase;
   font-size: 1.5rem;
 }
 
-#login h4 {
+#login h4,
+#signup h4 {
   text-transform: capitalize;
 }
 
-#login .option {
+#login .option,
+#signup .option {
   display: flex;
   gap: 0.5rem;
 }
 
-#login .option p:first-child {
+#login .option p:first-child,
+#signup .option p:first-child {
   color: var(--main-light-color);
 }
 
 #login form input,
-#login h3 {
+#login h3,
+#signup form input,
+#signup h3 {
   margin: 0 0 3rem 0;
 }
 
-#login form input[type="text"],
-#login form input[type="submit"] {
+#login form input:not(input[type="submit"]),
+#login form input[type="submit"],
+#signup form input:not(input[type="submit"]),
+#signup form input[type="submit"],
+.loginError {
   border: none;
   border-radius: 20px;
 }
 
-#login form input[type="text"] {
+#login form input[type="email"],
+#login form input[type="password"],
+#signup form input[type="text"],
+#signup form input[type="password"] {
   min-height: 3.75rem;
-  max-width: 40rem;
+  padding: 0rem;
   width: 40rem;
   border: none;
   border-radius: 20px;
   font-size: 1.15rem;
 }
 
-#login form input[type="submit"] {
+#login form input[type="submit"],
+#signup form input[type="submit"] {
   background-color: var(--orange);
   color: var(--main-light-color);
   padding: 1rem 3rem;
@@ -70,9 +94,20 @@ html {
 }
 
 body,
-#login {
+#login,
+#signup {
   overflow-x: hidden;
   background: fixed url("./Images/double-bubble-dark.png") center;
+}
+
+.loginError {
+  opacity: 0;
+  margin: 0.2rem auto;
+  width: fit-content;
+  color: var(--error-color);
+  padding: 0.5rem;
+  font-weight: 600;
+  letter-spacing: 0.18rem;
 }
 
 .nav {
@@ -190,14 +225,24 @@ a {
 .button,
 .name,
 #login,
-#login form,
-#login form input[type="text"],
-#login .option {
+#login form input[type="email"],
+#login form input[type="password"],
+#login .option,
+#signup,
+#signup form input[type="text"],
+#signup form input[type="password"],
+#signup .option,
+#login .loginError {
   justify-content: center;
   align-items: center;
   text-align: center;
 }
-
+.me img {
+  height: 200px;
+  width: 145px;
+  border: none;
+  border-radius: 50%;
+}
 .contact-me {
   min-height: 21em;
   padding: 1em;
@@ -233,7 +278,18 @@ a {
 }
 
 @media (max-width: 500px) {
-  #login .option {
+  #login,
+  #signup {
+    max-width: 100vw;
+  }
+
+  #login form,
+  #signup form {
+    width: 50%;
+  }
+
+  #login .option,
+  #signup .option {
     display: block;
     width: 100%;
     font-size: 0.8rem;
