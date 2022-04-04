@@ -21,25 +21,52 @@
     <style>
       @import "/node-modules/stunicons/fonts/style.min.css";
     </style>
+    <script type="text/javascript">
+      function validateForm() {
+        let emailValue = document.forms.loginForm.email.value;
+        const atPos = emailValue.indexOf("@");
+        const dotPos = emailValue.indexOf(".");
+        const password = "grace10";
+        let givenPassword = document.forms.loginForm.password.value;
+        const validEmail =
+          /[a-zA-Z0-9]{3,}[@]{1}[A-Za-z]{1,}[\.]{1}[a-zA-Z0-9]{2,}/g;
+
+        if (
+          dotPos - atPos < 2 ||
+          givenPassword != password ||
+          !emailValue.match(validEmail)
+        ) {
+          document.querySelector(".loginError").style.opacity = "1";
+          return false;
+        } else {
+          document.querySelector(".loginError").style.opacity = "0";
+        }
+      }
+    </script>
   </head>
   <body id="login">
+    <div class="me">
+      <img src="../Images/IMG-20210908-WA0009.jpg" alt="me" />
+    </div>
     <div class="login">
       <h3>Login</h3>
-      <form action="#" method="post">
+      <form name="loginForm" action="#" method="#" onsubmit="validateForm()">
+        <div class="loginError">Incorrect email or password!</div>
         <input
-          type="text"
+          type="email"
           name="email"
           id="email"
           placeholder="Enter valid email"
           required
         /><br />
         <input
-          type="text"
+          type="password"
           name="password"
           id="password"
           placeholder="Enter valid password"
           required
-        /><br /><input type="submit" value="Login" /><br />
+        /><br />
+        <input type="submit" value="Login" /><br />
       </form>
     </div>
     <div class="option">
