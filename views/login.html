@@ -4,11 +4,47 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Login - Join the blog</title>
+    <link rel="stylesheet" href="../style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Reggae+One&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Readex+Pro:wght@300;400&family=Reggae+One&display=swap"
+      rel="stylesheet"
+    />
+    <title>Login! Join the blog</title>
+    <style>
+      @import "/node-modules/stunicons/fonts/style.min.css";
+    </style>
   </head>
-  <body>
+  <body id="login">
     <div class="login">
-      <form action="#" method="post"></form>
+      <h3>Login</h3>
+      <form action="#" method="post">
+        <input
+          type="text"
+          name="email"
+          id="email"
+          placeholder="Enter valid email"
+          required
+        /><br />
+        <input
+          type="text"
+          name="password"
+          id="password"
+          placeholder="Enter valid password"
+          required
+        /><br /><input type="submit" value="Login" /><br />
+      </form>
+    </div>
+    <div class="option">
+      <p>First time here?</p>
+      <h4><a href="./signup.html">Sign up</a></h4>
     </div>
   </body>
 </html>
