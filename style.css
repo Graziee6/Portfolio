@@ -3,6 +3,9 @@
   --error-color: #ff0000cc;
   --main-light-color: #e5e5e5;
   --secondary-light-color: #c4c4c499;
+  --main-font:"Readex Pro", sans-serif;
+  --rare-font:"Reggae One", cursive;
+  --tick:'&#x2705';
 }
 * {
   margin: 0;
@@ -14,9 +17,13 @@ html {
   scroll-behavior: smooth;
 }
 
+.logo img {
+  margin: 0 7rem;
+}
+
 #login,
 #signup {
-  font-family: "Readex Pro", sans-serif;
+  font-family: var(--main-font);
 }
 
 #login {
@@ -97,7 +104,7 @@ body,
 #login,
 #signup {
   overflow-x: hidden;
-  background: fixed url("./Images/double-bubble-dark.png") center;
+  background: fixed rgb(0, 0, 0) center;
 }
 
 .loginError {
@@ -112,8 +119,9 @@ body,
 
 .nav {
   position: relative;
-  left: 31em;
-  bottom: 6em;
+  width: 100vw;
+  bottom: 7rem;
+  left: 23rem;
 }
 
 .nav ul {
@@ -123,7 +131,7 @@ body,
 }
 
 .nav ul li:not(li.button) {
-  font-family: "Readex Pro", sans-serif;
+  font-family: var(--main-font);
   color: var(--main-light-color);
   text-transform: capitalize;
   padding: 1em;
@@ -138,60 +146,91 @@ body,
 }
 
 .button {
-  min-height: 48px;
+  min-height: 12px;
   max-width: 160px;
   background-color: var(--main-light-color);
-  font-family: "Readex Pro", sans-serif;
+  font-family: var(--main-font);
   text-transform: capitalize;
-  font-size: 28px;
-  margin: 18px;
+  font-size: 20px;
+  margin: 26px;
   padding: 6px 10px 5px 25px;
   cursor: pointer;
   border: none;
   border-radius: 20px;
+  text-align: center;
 }
 
 .button a {
   color: var(--orange) !important;
 }
 
+.name{
+  position: relative;
+  top: -23rem;
+}
+
+.name *:not(.underlineVector){
+  margin-bottom:1rem ;
+}
+
 .bigname {
   color: var(--orange);
-  font-family: "Reggae One", cursive;
+  font-family: var(--rare-font);
   font-size: calc(5.8rem);
-  margin: 0 1em;
+  position: relative;
+top: 3rem;
+}
+.underlineVector{
+  position: relative;
+  left: 33.5rem;
+  top: -3rem;
 }
 
-.projects {
-  min-height: 30em;
-  background-color: var(--orange);
-}
 
-.underline {
+.circle {
+  width: 25rem;
+  height: 25rem;
+  border: 0.625rem solid var(--orange);
+  border-radius: 50%;
   margin: 0 auto;
+  opacity: .8;
 }
 
 .occupation {
   text-transform: uppercase;
   color: var(--orange);
   font-size: 24px;
-  font-family: "Readex Pro", sans-serif;
+  font-family: var(--main-font);
 }
 
 .location {
   text-transform: capitalize;
   color: var(--main-light-color);
   font-size: 18px;
-  font-family: "Readex Pro", sans-serif;
+  font-family: var(--main-font);
 }
 
 .underline {
   min-height: 3px;
   max-width: 182px;
   background-color: var(--orange);
+  margin: 0 auto;
 }
 
 /* projects class */
+
+.projects {
+  min-height: 30em;
+  max-width: 100vw;
+  background-color: var(--orange);
+  padding: .625rem;
+  display: flex;
+  gap: .625rem;
+  grid-column: 1;
+  position: relative;
+  top: -5rem;
+}
+
 a {
   text-decoration: none;
   color: var(--main-light-color);
@@ -200,14 +239,14 @@ a {
 .projects a {
   text-decoration: underline !important;
   color: var(--main-light-color);
-  font-family: "Readex Pro", sans-serif;
+  font-family: var(--main-font);
 }
 
-.projects h4 {
+.projects h4{
   text-transform: capitalize;
   font-size: 28px;
   color: var(--main-light-color);
-  font-family: "Readex Pro", sans-serif;
+  font-family: var(--main-font);
   margin: 1rem 0;
 }
 
@@ -215,8 +254,39 @@ a {
   display: flex;
 }
 
-.project-content {
-  display: block;
+/* about class */
+.about{
+  padding: .625rem;
+  margin: 0 auto;
+  display: flex;
+  gap: 10rem;
+  position: relative;
+  left: 12rem;
+}
+.skills h4{
+  text-transform: capitalize;
+  font-family: var(--main-font);
+}
+
+
+.skills ul li{
+  font-family: var(--main-font);
+  list-style-position: outside;
+  font-size: 1.rem;
+}
+
+.skills ul{
+  display: list-item;
+  /* list-style-type:"&#x2705"; */
+  line-height: 1.5rem;
+}
+
+.skills ul li, .skills ul h6{
+  color: var(--main-light-color);
+}
+
+.skills ul h6{
+  font-family: var(--rare-font);
 }
 
 .projects,
@@ -251,30 +321,39 @@ a {
   top: 21em;
 }
 
-.image-frame .one,
-.image-frame .two {
+/* .image-frame .one{
   min-height: 300px;
   max-width: 200px;
-  border: 1px solid var(--main-light-color);
-  border-radius: 20px;
+  
+  border-radius: 1.25rem;
   position: absolute;
-  left: 35em;
-}
+  
+} */
 
 .image-frame .two {
   position: relative;
 }
 
-.image-frame .one {
-  position: relative;
-  left: 36em;
-  top: 20em;
-}
-
-.image-frame .two img {
+.image-frame img {
   max-width: 200px;
   min-height: 300px;
-  border-radius: 20px;
+  border: 1px solid var(--main-light-color);
+  border-radius: 1.25rem;
+}
+
+.aboutme-text{
+  font-family: var(--main-font);
+}
+
+.aboutme-text h4, .skills h4{
+  color: var(--orange);
+  margin-bottom: 0.5rem;
+}
+
+.aboutme-text p{
+  max-width: 25rem;
+  color: var(--main-light-color);
+  line-height: 1.5rem;
 }
 
 @media (max-width: 500px) {
